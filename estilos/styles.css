@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+:root {
+    --bg-color: #1D3D5E;
+    --bg-secondary-color: #2C4963;
+    --color-primary: #3B5C7C;
+    --color-secundary: #59708B;
+    --color-font: #8789af;
+    --black: #000;
+    --white: #f1f1f1;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+#body {
+    width: 100%;
+    height: 100vh;
+    
+    background: linear-gradient(45deg, var(--bg-secondary-color), var(--bg-color));
+}
+main {
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px var(--bg-color);
+    width: 350px;
+    height: 350px;
+    background-color: var(--white);
+
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#fade {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b4b3b3;
+    transition: .1s ease;
+}
+#toggle {
+    width: 70px;
+    height: 70px;
+    transition: .1 ease;
+}
+.none {
+    display: none !important;
+}  
+#imagem-container {
+    padding-top: 60px;
+} 
+#imagem{
+    display: block;
+    margin: auto;
+}
+.display-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+#cep {
+    width: 55%;
+    border: 1px solid black;
+    font-size: 1.1em;
+    padding-bottom: 5px;
+    
+}
+#cep:focus {
+    outline: 2px solid var(--color-secundary);
+}
+#label {
+    margin-left: 1px;
+}
+#encontrar {
+    border: none;
+    background-color: rgba(33, 43, 173, 0.842);
+    color: white;
+    width: 120px;
+    border-radius: 60px;
+}
+#encontrar:hover{
+    background-color: rgb(33, 42, 173);
+    transition: .4s ease;
+}
+#espaçamento {
+    padding-top: 30px;
+}
+#form-container p{
+    text-align: center;
+    
+}
+#resp {
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px var(--bg-color);
+    width: 350px;
+    height: 350px;
+    background-color: var(--white);
+    padding: 10px 0px 0px 15px;
+
+}
+#resp p {
+    padding-top: 10px;
+}

@@ -23,19 +23,21 @@
 
 </head>
 <body id="body">
-    
-    <main>
-        <div id="resp" class="none">
-            <p><strong>CEP: </strong></p>
-            <p><strong>Logradouro: </strong></p>
-            <p><strong>complemento: </strong></p>
-            <p><strong>Bairro: </strong></p>
-            <p><strong>Localidade: </strong></p>
-            <p><strong>UF: </strong></p>
-        </div>
-        <div class="none" id="fade" >
-            <div id="toggle" class="spinner-border text-info none"></div>   
-        </div>
+    <div class="none" id="fade" >
+        <div id="toggle" class="spinner-border text-info none" ></div>   
+    </div>
+    <div id="resp" class="none">
+        <p><strong>CEP: </strong></p>
+        <p><strong>Logradouro: </strong></p>
+        <p><strong>complemento: </strong></p>
+        <p><strong>Bairro: </strong></p>
+        <p><strong>Localidade: </strong></p>
+        <p><strong>UF: </strong></p>
+        <input type="submit" value="voltar" id="voltar">
+    </div>
+    <main id="main">
+        
+        
         <div id="imagem-container">
             <img src="imagens/icone-mapa-60px.png" alt="icone mapa" width="50px"
             height="50px" id="imagem">
@@ -51,6 +53,7 @@
                     minlength="8"
                     maxlength="8"
                     placeholder="Digite seu CEP"
+                    autocomplete="off"
                     >
                     <label for="cep" id="label">Digite seu CEP</label>
 

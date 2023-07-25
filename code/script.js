@@ -1,3 +1,5 @@
 const cepinput = document.querySelectorAll ('#cep')
 
-cepinput.addEventListener ()
+cepinput.addEventListener ("keypress", (e) => {
+
+})

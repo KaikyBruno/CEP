@@ -23,20 +23,26 @@
 
 </head>
 <body id="body">
-    <div class="none" id="fade" >
-        <div id="toggle" class="spinner-border text-info none" ></div>   
-    </div>
-    <div id="resp" class="none">
-        <p><strong>CEP: </strong></p>
-        <p><strong>Logradouro: </strong></p>
-        <p><strong>complemento: </strong></p>
-        <p><strong>Bairro: </strong></p>
-        <p><strong>Localidade: </strong></p>
-        <p><strong>UF: </strong></p>
-        <input type="submit" value="voltar" id="voltar">
-    </div>
-    <main id="main">
-        
+    
+    
+    <main id="main" class="hide">
+        <div class="none" id="fade" >
+            <div id="toggle" class="spinner-border text-info none" ></div>   
+        </div>
+        <div id="mensagem" class="none">
+            <h5>CEP não encontrado</h5>
+            <h5>Tente Novamente</h5>
+            <input type="submit" value="Tentar Novamente" id="voltar1">
+        </div>
+        <div id="resp" class="none">
+            <p><strong>CEP: </strong></p>
+            <p><strong>Logradouro: </strong></p>
+            <p><strong>complemento: </strong></p>
+            <p><strong>Bairro: </strong></p>
+            <p><strong>Localidade: </strong></p>
+            <p><strong>UF: </strong></p>
+            <input type="submit" value="voltar" id="voltar">
+        </div>
         
         <div id="imagem-container">
             <img src="imagens/icone-mapa-60px.png" alt="icone mapa" width="50px"
@@ -50,15 +56,17 @@
                     name="cep"
                     class="form-control shadow-none"
                     required
-                    minlength="8"
                     maxlength="8"
                     placeholder="Digite seu CEP"
                     autocomplete="off"
                     >
                     <label for="cep" id="label">Digite seu CEP</label>
+                    
 
-                    <input type="submit" value="Encontrar" id="encontrar">
+                    <button id="encontrar" onclick="clicar ()"> Encontrar</button><br>
+                    
             </div>
+            <p id="errado">O CEP tem que ter 8 dígitos</p>
             <p id="espaçamento">Encontramos qualquer endereço do Brasil</p>
             <p>Exemplo: 86970000</p>
         </form>

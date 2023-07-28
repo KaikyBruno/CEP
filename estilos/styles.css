@@ -32,6 +32,44 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    display: block;
+}
+#mensagem {
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px var(--bg-color);
+    width: 350px;
+    height: 350px;
+    background-color: var(--white);
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 90px;
+    z-index: 10;
+}
+#mensagem > h5{
+    text-align: center;
+}
+#voltar1 {
+    border: none;
+    background-color: rgba(33, 43, 173, 0.842);
+    color: white;
+    width: 150px;
+    border-radius: 60px;
+
+    padding: 10px;
+    position: relative;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+}
+#voltar1:hover {
+    background-color: rgb(33, 42, 173);
+    transition: .4s ease;
+}
+.hide {
+    display: none;
 }
 #fade {
     border-radius: 10px;
@@ -40,7 +78,7 @@
     height: 350px;
     background-color: var(--white);
 
-    position: relative;
+    position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -51,11 +89,13 @@
     align-items: center;
     background-color: #b4b3b3;
     transition: .1s ease;
+    z-index: 10;
 }
 #toggle {
     width: 70px;
     height: 70px;
     transition: .1 ease;
+    
 }
 .none {
     display: none !important;
@@ -79,13 +119,21 @@
     border: 1px solid black;
     font-size: 1.1em;
     padding-bottom: 5px;
-    
 }
 #cep:focus {
     outline: 2px solid var(--color-secundary);
 }
 #label {
     margin-left: 1px;
+}
+#errado {
+    text-align: left !important;
+    margin-left: 15px;
+    font-size: 0.9em;
+    padding-top: 3px;
+    color: red;
+    display: none;
+    margin-bottom: 0;
 }
 #encontrar {
     border: none;
@@ -101,8 +149,12 @@
 #espaçamento {
     padding-top: 30px;
 }
+#form-container {
+    display: block !important;
+}
 #form-container p{
     text-align: center;
+    
     
 }
 #resp {
